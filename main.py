@@ -41,8 +41,6 @@ for row in rows:
     rata_12 = cols[3].get_text(strip=True)
     rata_14 = cols[4].get_text(strip=True)
 
-    print(program, akcijska_cena, puna_cena, rata_12, rata_14)
-
 
     cursor.execute("""
         INSERT INTO cene_kurseva (program, akcijska_cena, puna_cena, rata_12, rata_14)
